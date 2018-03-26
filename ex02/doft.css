@@ -1,0 +1,140 @@
+body {
+	background-color: rgb(80, 80, 80); 
+}
+
+header {
+	width: 80%;
+	background: #909090;
+	margin: 20px auto;
+	display: flex;
+	height: 15vh;
+	border-radius: 10px;
+	box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
+}
+
+header img[title=logo] {
+	height: 15vh;
+	margin: auto 20px;
+}
+
+header img[title='une loupe'] {
+	margin-left: auto; 
+}
+
+#main {
+	background: #909090;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
+	z-index: 1;
+	height: 60vh;
+}
+
+#main img {
+	height: 60vh;
+}
+
+article {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	height: 50vh;
+}
+
+#left, #objects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	width: 150px;
+	background: #909090;
+	height: 576px;
+	box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+}
+
+#objects img[alt=object1] {
+	margin-top: 10px;
+}
+
+#objects div:hover {
+	border: solid red;
+}
+
+#left {
+	justify-content: space-around;
+}
+
+#left img, #objects img {
+	width: 100px;
+	height: 100px;
+}
+
+#left img:hover, #objects img:hover {
+	border: solid red;
+}
+
+header > div {
+	display: flex;
+	flex-direction: column;
+	height: 92%;
+	justify-content: space-between;
+	margin: 10px 10px -10px;
+}
+
+header div img {
+	width: 20px;
+	height: 20px;
+}
+
+#bloc {
+	width: 25%;
+	background-color: #81ec81;
+	box-shadow: 15px 10px 5px rgba(0, 0, 0, 0.9);
+	border-radius: 10px;
+	height: 150px;
+	z-index: 10;
+	position: absolute;
+	left: 300px;
+	top: 70vh;
+}
+
+#bloc p {
+	margin: 0 10px;
+	font-size: 14pt;
+	width: 78%;
+}
+
+#bloc p > span {
+	font-size: xx-large;
+}
+
+#bloc input[name=text] {
+	margin-left: 10px;
+	width: 53%;
+}
+
+#link1 a {
+	width: 100px;
+	height: 159px;
+	position: absolute;
+	left: 41%;
+	z-index: 10;
+	top: 56vh;
+}
+
+#link2 a {
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	left: 67%;
+	z-index: 10;
+	top: 53vh;
+}
+
+#wall {
+	width: 120px;
+	height: 70px;
+	background-image: url(resources/brick.jpg);
+}

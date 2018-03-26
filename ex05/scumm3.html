@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Day of the 42</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="doft.css">
+</head>
+
+<body>
+
+	<header>
+		<img src="resources/day_of_the_42.png" alt="logo" title="logo">
+		<img src="resources/loupe.png" alt="une loupe" title="une loupe">
+		<div>
+			<a href="http://www.relaischateaux.com"><img src="resources/close.gif" alt="Deconnecter" title="Déconnecter"></a>
+			<a href="http://www.disney.com"><img src="resources/reload.png" alt="Recommencer au debut" title="Recommencer au début"></a>
+		</div>
+	</header>
+
+	<article>
+		<section id="left">
+			<a href="scumm.html"><img src="resources/arrow.png" alt="Revenir en arriere" title="Revenir en arriere"></a>
+			<img src="resources/main.png" alt="Prendre" title="Prendre">
+			<img src="resources/oeil.png" alt="Regarder" title="Regarder">
+			<img src="resources/outil.png" alt="Utiliser" title="Utiliser">
+			<img src="resources/chat-icon.png" alt="Parler" title="Parler">
+		</section>
+
+		<section id="main">
+			<img src="https://s1.qwant.com/thumbr/0x0/1/a/a7db582f877cae25223ac102e10500/b_1_q_0_p_0.jpg?u=http%3A%2F%2Fwww.librairielapage.com%2Fcache%2Fcouvertures%2F9782290342480.jpg&q=0&b=1&p=0&a=1" alt="un livre" title="un livre">
+			<div id="link1" class="link-cluster" style="color: white">
+				Vous avez lu le livre, bravo
+				vous pouvez retourner en arriere
+			</div>
+		</section>
+
+		<section id="objects">
+			<img src="resources/book.png" alt="object1" title="object1">
+			<img src="resources/towel.png" alt="object2" title="object2">
+			<div id="wall" title="wall"></div>
+		</section>
+	</article>
+
+	<div id="bloc">
+		<p>Vous <span>entrez</span> alors dans une grande piece remplie d'ordinateurs...</p>
+		<p><i>- Bonjour, vous êtes nouveau ici ?</i></p>
+		<input type="text" name="text">
+		<input type="submit" name="sub" value="Repondre">
+	</div>
+</body>
+
+<script type="text/javascript">
+	child = document.querySelectorAll('#objects img, #objects div');
+	child.forEach(function (elem) {
+		elem.addEventListener('click', function (e) {
+			if (e.target.alt == 'object1')
+				document.location.href = 'scumm0.html';
+			else if (e.target.alt == 'object2')
+				document.location.href = 'scumm1.html';
+			else
+				document.location.href = 'scumm2.html';
+		})
+	})
+</script>
+</html>
