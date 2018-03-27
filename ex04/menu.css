@@ -30,7 +30,7 @@ h1 {
 .dropdown {
     position: relative;
     display: inline-block;
-    width: 23vw;
+    width: 15vw;
     height: 4vh;
     background-color: #fff;
     padding-top: 2vh;
@@ -50,7 +50,7 @@ h1 {
     display: none;
     position: absolute;
     background-color: #fff;
-    width: 23vw;
+    width: 15vw;
     height: 70vh;
     margin-top: 2vh;
 }
